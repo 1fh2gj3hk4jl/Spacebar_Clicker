@@ -1,10 +1,18 @@
 [gd_scene format=3 uid="uid://hvsua3f87kua"]
 
-[ext_resource type="Script" uid="uid://gyq14ap3ip6c" path="res://Spacebar.gd" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://d1tvxp6u1fxcw" path="res://images (5) (2).jpeg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://gyq14ap3ip6c" path="res://Spacebar.gd" id="1_3youh"]
+[ext_resource type="Texture2D" uid="uid://d1tvxp6u1fxcw" path="res://images (5) (2).jpeg" id="2_tqse3"]
 
 [node name="Spacebar" type="Node2D" unique_id=1050994008]
-script = ExtResource("1_0e48y")
+script = ExtResource("1_3youh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1245535620]
-texture = ExtResource("1_wtcfe")
+texture = ExtResource("2_tqse3")
+
+[node name="spacebar counter" type="Label" parent="." unique_id=343160191]
+offset_left = 540.0
+offset_top = 56.999985
+offset_right = 729.0
+offset_bottom = 198.99998
+theme_override_font_sizes/font_size = 103
+text = "0"
