@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cy714u4ykbi1v"]
+
+[ext_resource type="Texture2D" uid="uid://m8hmik75g7m4" path="res://Assets/Shopitem.svg" id="1_ej3yw"]
+[ext_resource type="Script" uid="uid://c2n438tfqjffx" path="res://Prefabs/shop_item.gd" id="2_wxcuh"]
+
+[node name="ShopItem" type="Sprite2D" unique_id=1967950966]
+texture = ExtResource("1_ej3yw")
+script = ExtResource("2_wxcuh")
+
+[node name="Name" type="Label" parent="." unique_id=332473412]
+modulate = Color(0, 0, 0, 1)
+offset_left = -90.0
+offset_top = -40.0
+offset_right = -11.0
+offset_bottom = -17.0
+text = "Item name"
+
+[node name="Description" type="Label" parent="." unique_id=766393342]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -58.5
+offset_right = -52.0
+offset_bottom = -35.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "Item description"
+
+[node name="Price" type="Label" parent="." unique_id=1420219505]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -123.0
+offset_top = -80.0
+offset_right = -76.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "0 points"
+
+[node name="Amount" type="Label" parent="." unique_id=1102098297]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_top = -40.0
+offset_right = -116.0
+offset_bottom = -17.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 12
+text = "x0"
