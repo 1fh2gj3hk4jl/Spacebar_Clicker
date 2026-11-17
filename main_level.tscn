@@ -6,6 +6,6 @@
 [node name="main level" type="Node2D" unique_id=1975904978]
 
 [node name="Shop" parent="." unique_id=1021569109 instance=ExtResource("3_bhu08")]
-position = Vector2(96, 600)
+position = Vector2(98, 490)
 
 [node name="Spacebar" parent="." unique_id=1050994008 instance=ExtResource("2_6614m")]
