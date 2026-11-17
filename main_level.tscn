@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://dbgdy55ciw27a"]
 
 [ext_resource type="Texture2D" uid="uid://d1tvxp6u1fxcw" path="res://images (5) (2).jpeg" id="1_bw3m6"]
-[ext_resource type="PackedScene" uid="uid://cy714u4ykbi1v" path="res://Prefabs/shop_item.tscn" id="2_6614m"]
+[ext_resource type="PackedScene" uid="uid://dhsk26xdyg11n" path="res://shop.tscn" id="3_bhu08"]
 
 [node name="main level" type="Node2D" unique_id=1975904978]
 
 [node name="Images(5)(2)" type="Sprite2D" parent="." unique_id=26902699]
-position = Vector2(590, 274.99997)
+position = Vector2(576, 275)
 scale = Vector2(1.0306295, 0.79761946)
 texture = ExtResource("1_bw3m6")
 
-[node name="ShopItem2" parent="." unique_id=1967950966 instance=ExtResource("2_6614m")]
-position = Vector2(169, 409)
+[node name="Shop" parent="." unique_id=1021569109 instance=ExtResource("3_bhu08")]
+position = Vector2(96, 600)
