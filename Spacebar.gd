@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("spacebar"):
 		spacebar_counter += 1 
 		get_node("spacebar_counter") 
-		set_spacebar_counter(spacebar_counter + 1)
+		spacebar_counter == spacebar_counter + 1

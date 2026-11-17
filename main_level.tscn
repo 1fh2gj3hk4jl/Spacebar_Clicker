@@ -10,5 +10,5 @@ position = Vector2(590, 274.99997)
 scale = Vector2(1.0306295, 0.79761946)
 texture = ExtResource("1_bw3m6")
 
-[node name="ShopItem" parent="." unique_id=1967950966 instance=ExtResource("2_6614m")]
-position = Vector2(1098, 2353)
+[node name="ShopItem2" parent="." unique_id=1967950966 instance=ExtResource("2_6614m")]
+position = Vector2(169, 409)
