@@ -9,6 +9,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("spacebar"):
-		spacebar_counter += 1 
-		get_node("spacebar_counter") 
-		spacebar_counter == spacebar_counter + 1
+		set_spacebar_counter(spacebar_counter + 1)
+		
+		
+func set_spacebar_counter(new_spacebar_counter: int) -> void:
+	spacebar_counter = new_spacebar_counter
+	get_node("spacebar counter").text = str(spacebar_counter)
+	

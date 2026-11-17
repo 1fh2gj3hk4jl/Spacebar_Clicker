@@ -1,14 +1,11 @@
 [gd_scene format=3 uid="uid://dbgdy55ciw27a"]
 
-[ext_resource type="Texture2D" uid="uid://d1tvxp6u1fxcw" path="res://images (5) (2).jpeg" id="1_bw3m6"]
+[ext_resource type="PackedScene" uid="uid://hvsua3f87kua" path="res://Prefabs/spacebar.tscn" id="2_6614m"]
 [ext_resource type="PackedScene" uid="uid://dhsk26xdyg11n" path="res://shop.tscn" id="3_bhu08"]
 
 [node name="main level" type="Node2D" unique_id=1975904978]
 
-[node name="Images(5)(2)" type="Sprite2D" parent="." unique_id=26902699]
-position = Vector2(576, 275)
-scale = Vector2(1.0306295, 0.79761946)
-texture = ExtResource("1_bw3m6")
-
 [node name="Shop" parent="." unique_id=1021569109 instance=ExtResource("3_bhu08")]
 position = Vector2(96, 600)
+
+[node name="Spacebar" parent="." unique_id=1050994008 instance=ExtResource("2_6614m")]
