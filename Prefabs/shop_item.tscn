@@ -3,6 +3,27 @@
 [ext_resource type="Texture2D" uid="uid://m8hmik75g7m4" path="res://Assets/Shopitem.svg" id="1_ej3yw"]
 [ext_resource type="Script" uid="uid://c2n438tfqjffx" path="res://Prefabs/shop_item.gd" id="2_wxcuh"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wxcuh"]
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58lyu"]
+bg_color = Color(0.2509804, 0.2509804, 0.2509804, 0.2509804)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6kliw"]
+bg_color = Color(1, 1, 1, 0.2509804)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
 [node name="ShopItem" type="Sprite2D" unique_id=1967950966]
 texture = ExtResource("1_ej3yw")
 script = ExtResource("2_wxcuh")
@@ -30,6 +51,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 12
 text = "Item description"
+horizontal_alignment = 1
 
 [node name="Price" type="Label" parent="." unique_id=1420219505]
 modulate = Color(0, 0, 0, 1)
@@ -46,6 +68,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 12
 text = "0 clicks"
+horizontal_alignment = 1
 
 [node name="Amount" type="Label" parent="." unique_id=1102098297]
 modulate = Color(0, 0, 0, 1)
@@ -59,3 +82,16 @@ offset_bottom = -17.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 12
 text = "x0"
+horizontal_alignment = 2
+
+[node name="Button" type="Button" parent="." unique_id=196675815]
+offset_left = -94.0
+offset_top = -44.0
+offset_right = 94.0
+offset_bottom = 44.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wxcuh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_58lyu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6kliw")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

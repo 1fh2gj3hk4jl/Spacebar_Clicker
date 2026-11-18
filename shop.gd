@@ -3,8 +3,8 @@ extends Node2D
 var shopitemprefab := preload("res://Prefabs/shop_item.tscn")
 var itemlist := [
 ["Autoclicker", "Gives you 1 clicks per second", 10],
-["[Replace with name]", "[Replace with description]", -2],
-["[Replace with name]", "[Replace with description]", -2],
+["[Replace with name]", "[Replace with description]", 0],
+["[Replace with name]", "[Replace with description]", 0],
 ]
 
 # Called when the node enters the scene tree for the first time.
