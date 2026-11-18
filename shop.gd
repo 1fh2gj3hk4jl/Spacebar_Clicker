@@ -5,8 +5,10 @@ var shopitemprefab := preload("res://Prefabs/shop_item.tscn")
 # [Name, Description, Price, Click Increase, Click per second]
 var itemlist := [
 ["Autoclicker", "Gives you 1 clicks per second", 10, 0, 1],
-["[Replace with name]", "[Replace with description]", 0, 0, 0],
-["[Replace with name]", "[Replace with description]", 0, 0, 0],
+["Helper Human", "[Gives you 5 clicks per tally click]", 20, 5, 0],
+["The Gamer", "Gives you 10 clicks per tally click", 50, 10, 0],
+["The Robot", "Gives you 10 clicks per second", 100, 0, 10],
+[""]
 ]
 
 # Called when the node enters the scene tree for the first time.
